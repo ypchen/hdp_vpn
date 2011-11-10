@@ -17,7 +17,7 @@
 		B. 由於 kernel 中沒有加入 mppe support，所以必須以無加密模式連接 pptp server
 		C. 再配合上原本就有的 ppp 功能，即可連接 pptp VPN server (無加密)
 	2. OpenVPN
-		A. HD300B plus 的系統缺少了 tun.ko (Universal TUN/TAP drver)
+		A. HD300B plus 的系統缺少了 tun.ko (Universal TUN/TAP driver)
 			這裡提供為 2.6.12.6-VENUS 所編譯的 kernel module
 		B. openvpn (以及其他相依 package) 可使用 ipkg 取得
 		C. 用 insmod 載入 tun.ko 後，即可使用 openvpn 進行連接
